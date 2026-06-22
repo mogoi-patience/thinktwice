@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThinkTwice | Fashion Store</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">ThinkTwice</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Fresh Styles,<br/>Every Day.</h1>
+      <p>Discover new arrivals, daily deals, and exclusive offers.</p>
+      <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="products-grid" id="products-grid">
+      <p class="loading">Loading products...</p>
+    </div>
+  </section>
+
+  <!-- OFFERS BANNER -->
+  <section class="offers-banner">
+    <h2>🔥 Today's Offer</h2>
+    <p>Get up to 30% off on selected items. Limited time only!</p>
+    <a href="offers.html" class="btn btn-white">View Offers</a>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="section subscribe">
+    <h2>Get Notified First</h2>
+    <p>Subscribe to get alerts on new stock, offers, and deals.</p>
+    <div class="subscribe-form">
+      <input type="email" id="sub-email" placeholder="Enter your email" />
+      <input type="tel" id="sub-phone" placeholder="Phone (optional)" />
+      <button onclick="subscribe()" class="btn">Subscribe</button>
+    </div>
+    <p id="sub-message"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2024 ThinkTwice Fashion. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
